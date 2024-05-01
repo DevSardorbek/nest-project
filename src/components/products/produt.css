@@ -1,0 +1,44 @@
+.card {
+  transition: 0.4s;
+  h2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 16px 0;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      color: green;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        font-size: medium;
+        color: darkslategray;
+      }
+    }
+    img {
+      width: 100px;
+      height: 20px;
+    }
+  }
+}
+.wrapper .card:hover {
+  transform: scale(1.1, 1.1);
+}
+.wrapper:hover > .card:not(:hover) {
+  filter: blur(0.5px);
+  transform: scale(1, 1);
+}
