@@ -1,69 +1,46 @@
 .footer__wrapper {
   margin-top: 100px;
-  background-image: linear-gradient(
-      324deg,
-      transparent 0%,
-      transparent 45%,
-      rgba(186, 186, 186, 0.04) 45%,
-      rgba(186, 186, 186, 0.04) 47%,
-      transparent 47%,
-      transparent 100%
-    ),
-    linear-gradient(
-      208deg,
-      transparent 0%,
-      transparent 40%,
-      rgba(186, 186, 186, 0.04) 40%,
-      rgba(186, 186, 186, 0.04) 80%,
-      transparent 80%,
-      transparent 100%
-    ),
-    linear-gradient(
-      202deg,
-      transparent 0%,
-      transparent 20%,
-      rgba(186, 186, 186, 0.04) 20%,
-      rgba(186, 186, 186, 0.04) 40%,
-      transparent 40%,
-      transparent 100%
-    ),
-    linear-gradient(
-      338deg,
-      transparent 0%,
-      transparent 10%,
-      rgba(186, 186, 186, 0.04) 10%,
-      rgba(186, 186, 186, 0.04) 72%,
-      transparent 72%,
-      transparent 100%
-    ),
-    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  color: black;
   .footer__section {
+    border-bottom: 1px solid #bce3c9;
     display: flex;
     padding-top: 135px;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 105px;
-    color: #fff;
+    color: #161414;
     p {
-      font-family: Roboto;
-      font-size: 14px;
+      display: flex;
+      gap: 6px;
+      font-family: Lato;
+      font-size: 17px;
       font-weight: 400;
-      line-height: 16.41px;
+      line-height: 24px;
       text-align: left;
-      color: #ffffff8b;
+      color: #253d4e;
       padding-bottom: 20px;
       cursor: pointer;
       transition: 0.3s;
       &:hover {
-        color: #fff;
+        color: black;
+        transform: scale(1.05);
       }
     }
-    h3 {
-      font-family: Philosopher;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 20.16px;
+    h5 {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
       text-align: left;
+      color: #7e7e7e;
+    }
+    h3 {
+      font-family: Quicksand;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      text-align: left;
+      color: #253d4e;
       margin-bottom: 26px;
     }
     .footer_logo {
@@ -83,6 +60,53 @@
           &:hover {
             transform: scale(1.2);
           }
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 34px;
+    .fotter_bottom-one {
+      p {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #7e7e7e;
+        span {
+          color: #3bb77e;
+        }
+      }
+    }
+    .fotter_bottom-two {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      .f_call {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        h1 {
+          font-family: Quicksand;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 26px;
+          text-align: center;
+          color: #3bb77e;
+        }
+        p {
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 12px;
+          letter-spacing: 0.8999999761581421px;
+          text-align: center;
+          color: #7e7e7e;
         }
       }
     }

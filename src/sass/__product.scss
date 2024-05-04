@@ -1,0 +1,58 @@
+.prodact__wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .prodact__section {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    .prodact__card {
+      background-image: url("../assets/proimg1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 512px;
+      height: 300px;
+      padding: 80px 0 73px 50px;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:nth-child(2) {
+        background-image: url("../assets/proimg2.png");
+      }
+      &:nth-child(3) {
+        background-image: url("../assets/proimg3.png");
+      }
+      h3 {
+        width: 200px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 24px;
+        color: #253d4e;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        margin-bottom: 28px;
+      }
+      button {
+        padding: 8px 28px 8px 13px;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15.6px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        background-color: #f53e32;
+        border-radius: 5px;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+          color: #f53e32;
+          background-color: #fff;
+          border: 1px solid #f53e32;
+        }
+      }
+    }
+  }
+}

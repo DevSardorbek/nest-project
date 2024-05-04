@@ -1,4 +1,4 @@
-import "./App.css";
+import "./sass/style.scss";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Login from "./pages/login/Login";
@@ -19,12 +19,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/register" element={<Login />} />
+        <Route path="/Login" element={<Login />} />{" "}
         <Route path="/product/:id" element={<SingleRoute />} />
         <Route path="/" element={<Auth />}>
           <Route path="admin" element={<Admin />}></Route>
         </Route>
-
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ToastContainer />

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "../api";
 
-export function useFetch(api, ...rest) {
+export function useFetch(url, ...rest) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -9,7 +9,7 @@ export function useFetch(api, ...rest) {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(api)
+      .get(url)
       .then((res) => setData(res))
       .catch((err) => setError(err))
       .finally(() => setLoading(false));

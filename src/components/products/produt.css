@@ -1,10 +1,52 @@
 .card {
   transition: 0.4s;
+  border-radius: 10px;
+  position: relative;
+  span {
+    &:first-child {
+      position: absolute;
+      padding: 8px 20px;
+      border-radius: 15px 0 20px 0;
+      background-color: #f74b81;
+      top: 0;
+      left: 0;
+      color: #fff;
+    }
+  }
+  h4 {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #adadad;
+    margin-top: 5px;
+  }
   h2 {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    color: #253d4e;
+    margin: 10px 0;
+  }
+  h3 {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #b6b6b6;
+    display: flex;
+    gap: 3px;
+    article {
+      color: #3bb77e;
+    }
   }
   p {
     overflow: hidden;
@@ -12,13 +54,18 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     margin: 16px 0;
+    color: #adadad;
   }
   .rating {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    h3 {
-      color: green;
+    p {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #b6b6b6;
     }
     div {
       display: flex;
@@ -32,6 +79,48 @@
     img {
       width: 100px;
       height: 20px;
+    }
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      h3 {
+        font-family: Quicksand;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #3bb77e;
+      }
+      del {
+        font-family: Quicksand;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #adadad;
+      }
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    background-color: #def9ec;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #3bb77e;
+    gap: 6px;
+    img {
+      width: 14px;
+      height: 14px;
     }
   }
 }
