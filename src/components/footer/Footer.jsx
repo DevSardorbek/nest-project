@@ -9,7 +9,6 @@ import app from "../../assets/app.png";
 import payment from "../../assets/payment.png";
 import playmarket from "../../assets/playmarket.png";
 import loc from "../../assets/loc.png";
-import con from "../../assets/con.png";
 import tele from "../../assets/tele.png";
 import clock from "../../assets/clock.png";
 import tel from "../../assets/tel.png";
@@ -28,10 +27,7 @@ export default class Footer extends Component {
                 Address: 5171 W Campbell Ave undefined <br /> Kent, Utah 53127
                 United States
               </p>
-              <p>
-                <img src={con} alt="" />
-                companyname@gmail.com
-              </p>
+              <p>companyname@gmail.com</p>
               <p>
                 <img src={tele} alt="" />
                 Phone: +7 485-118-03-25
